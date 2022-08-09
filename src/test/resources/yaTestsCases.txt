@@ -1,0 +1,14 @@
+NAME: При поиске в яндексе по запросу {TEST DATA} в результатах отобржается текст {TEST DATA}
+TEST DATA: [
+        [JUnit 5 / team's statement on the war in Ukraine],
+        [TestNG / is a testing framework inspired from JUnit and NUNit]
+     ]
+PRIORITY: CRITICAL
+PRECONDITIONS:
+    - Открыт браузер
+    - Находимся на стартовой странице ya.ru
+STEPS:
+    - В поле поиска ввести текст {TEST DATA[0]}
+    - Нажать на кнопку "Найти"
+EXPECTED RESULT:
+    - В результатах отобржается текст {TEST DATA[1]}
